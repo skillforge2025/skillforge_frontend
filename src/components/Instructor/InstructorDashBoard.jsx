@@ -196,6 +196,35 @@ const InstructorDashBoard = () => {
               </button>
               <p className="font-medium ">Add New</p>
             </div>
+
+            <button
+      onClick={() => navigate("/instructor/courses")}
+      className="mt-2 text-sm text-blue-600 underline"
+    >
+      View My Courses
+    </button>
+            <div className="flex flex-col gap-2 mt-4">
+    <button
+    className="bg-blue-600 text-white px-4 py-2 rounded"
+    onClick={() => navigate("/instructor/profile")}
+  >
+    View Profile
+  </button>
+  <button
+    className="bg-green-600 text-white px-4 py-2 rounded"
+    onClick={() => navigate("/instructor/add-content")}
+  >
+    Add New Content
+  </button>
+  <button
+    className="bg-purple-600 text-white px-4 py-2 rounded"
+    onClick={() => navigate("/instructor/courses")}
+  >
+    View All Courses
+  </button>
+</div>
+
+
           </div>
 
           <div className="divide-y h-full divide-gray-200 grid grid-cols-2 gap-3 mt-2">
